@@ -1,2 +1,2 @@
-/api/* https://fight-hunger.herokuapp.com :splat 200
+/api/* https://fight-hunger.herokuapp.com/:splat 200
 /* /index.html 200
