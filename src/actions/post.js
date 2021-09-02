@@ -13,7 +13,7 @@ import {
 
 export const getPosts = () => async (dispatch) => {
   try {
-    const res = await axios.get("/api/posts");
+    const res = await axios.get("https://fight-hunger.herokuapp.com/api/posts");
     dispatch({
       type: GET_POSTS,
       payload: res.data,
@@ -30,7 +30,9 @@ export const getPosts = () => async (dispatch) => {
 
 export const addLike = (id) => async (dispatch) => {
   try {
-    const res = await axios.put(`/api/posts/like/${id}`);
+    const res = await axios.put(
+      `https://fight-hunger.herokuapp.com/api/posts/like/${id}`
+    );
     dispatch({
       type: UPDATE_LIKES,
       payload: { id, likes: res.data },
@@ -47,7 +49,9 @@ export const addLike = (id) => async (dispatch) => {
 
 export const removeLike = (id) => async (dispatch) => {
   try {
-    const res = await axios.put(`/api/posts/unlike/${id}`);
+    const res = await axios.put(
+      `https://fight-hunger.herokuapp.com/api/posts/unlike/${id}`
+    );
     dispatch({
       type: UPDATE_LIKES,
       payload: { id, likes: res.data },
@@ -65,7 +69,7 @@ export const removeLike = (id) => async (dispatch) => {
 
 export const deletePost = (id) => async (dispatch) => {
   try {
-    await axios.delete(`/api/posts/${id}`);
+    await axios.delete(`https://fight-hunger.herokuapp.com/api/posts/${id}`);
     dispatch({
       type: DELETE_POST,
       payload: id,
@@ -116,7 +120,11 @@ export const addPost = (formData) => async (dispatch) => {
     const lng = latLng.lng.toString();
     formData["lat"] = lat;
     formData["lon"] = lng;
-    const res = await axios.post("/api/posts", formData, config);
+    const res = await axios.post(
+      "https://fight-hunger.herokuapp.com/api/posts",
+      formData,
+      config
+    );
     dispatch({
       type: ADD_POST,
       payload: res.data,
@@ -167,7 +175,11 @@ export const updatePost = (formData, id) => async (dispatch) => {
     const lng = latLng.lng.toString();
     formData["lat"] = lat;
     formData["lon"] = lng;
-    const res = await axios.put(`/api/posts/${id}`, formData, config);
+    const res = await axios.put(
+      `https://fight-hunger.herokuapp.com/api/posts/${id}`,
+      formData,
+      config
+    );
     dispatch({
       type: UPDATE_POST,
       payload: { id, data: res.data },
@@ -184,7 +196,9 @@ export const updatePost = (formData, id) => async (dispatch) => {
 
 export const getPost = (id) => async (dispatch) => {
   try {
-    const res = await axios.get(`/api/posts/${id}`);
+    const res = await axios.get(
+      `https://fight-hunger.herokuapp.com/api/posts/${id}`
+    );
     dispatch({
       type: GET_POST,
       payload: res.data,
