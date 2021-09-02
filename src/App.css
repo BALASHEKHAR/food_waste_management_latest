@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  padding: 0px 10px;
+  display: none;
+  align-items: center;
+  z-index: 300;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.2s ease;
+  animation: shakeBtn 1s infinite alternate-reverse;
+  background-color: blueviolet;
+}
+.snackbar img {
+  height: 66px;
+  margin: 5px 10px;
+}
+
+@keyframes shakeBtn {
+  0% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}

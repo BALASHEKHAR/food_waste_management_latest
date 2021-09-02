@@ -1,0 +1,131 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.bg_img {
+  height: 98vh;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -100;
+  filter: blur(5px);
+  object-fit: cover;
+  position: absolute;
+}
+
+.home-container {
+  color: black;
+  flex-wrap: wrap;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-donate-buttton {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 5px 10px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.home-donate-buttton:hover {
+  z-index: 21;
+  background-color: black;
+  color: white;
+}
+.home-container-details h1 {
+  margin: 5px 10px;
+  font-size: 40px;
+}
+.home-container-details h4 {
+  font-size: 20px;
+  margin: 5px 10px;
+}
+.home-container-logo img {
+  filter: saturate(160%);
+  /* max-width: 300px; */
+}
+
+/* start about us section */
+.about_us_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.about_us_img {
+  margin: 20px;
+  max-width: 380px;
+  padding: 20px;
+}
+
+.about_us_left {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 490px) {
+  .about_us_img {
+    width: 300px;
+  }
+}
+/* end about us section */
+
+.helping_hands {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.helping_hands_bg_img {
+  min-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.helping_hands_main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 500px;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .helping_hands_main {
+    top: 80px;
+    margin: 10px;
+    height: 230px;
+  }
+  .bg_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .helping_hands_main {
+    height: 285px;
+  }
+}

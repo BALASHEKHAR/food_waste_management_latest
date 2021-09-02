@@ -1,0 +1,187 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.new-post-compose {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  color: green;
+}
+.new-post-compose .go-back {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+}
+.new-post-compose .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 3px;
+  font-weight: 600;
+  color: black;
+}
+.new-post-compose > form {
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-post-compose form .inputs {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.new-post-compose form .inputs > h4 {
+  margin: 10px 0;
+}
+
+.new-post-compose form .inputs textarea,
+MaterialTable {
+  background: var(--lightGrey);
+  width: 90vw;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  color: rgb(110, 109, 109);
+  box-sizing: border-box;
+  margin: 0 0 4vh 0;
+}
+.new-post-compose form .inputs .material-table {
+  background: var(--lightGrey);
+  width: 80vw;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  color: rgb(110, 109, 109);
+  box-sizing: border-box;
+  margin: 0 0 4vh 0;
+}
+.new-post-compose form .inputs .input-fields {
+  background: var(--lightGrey);
+  width: 90vw;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  color: rgb(110, 109, 109);
+  box-sizing: border-box;
+  margin: 0 0 4vh 0;
+}
+.new-post-compose form .inputs .drop-downs {
+  background: var(--lightGrey);
+  width: 90vw;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  display: inline-block;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  color: rgb(110, 109, 109);
+  box-sizing: border-box;
+  margin: 0 0 4vh 0;
+}
+
+.new-post-compose form .inputs textarea {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 400px);
+}
+
+.new-post-compose form .donate-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryColor);
+  border: rgba(176, 93, 143, 0.85);
+  border-radius: 28px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  padding: 12px 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 90vw;
+  max-width: 700px;
+}
+
+.place-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.place-wrapper input {
+  width: 50%;
+}
+
+.donate-input {
+  opacity: 0.7;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 16px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 100%;
+}
+.Donate {
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+.donate-btn {
+  cursor: pointer;
+  background-color: rgba(245, 211, 199, 0.4);
+  padding: 7px 10px;
+  border: 1px solid rgb(255, 68, 0);
+  color: rgb(255, 68, 0);
+  margin: 10px 0px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+.donate-btn:hover {
+  transform: scale(0.9);
+  background-color: rgb(255, 68, 0);
+  color: white;
+}
+/* .donate-btn1 {
+  cursor: pointer;
+  background-color: rgba(173, 248, 219, 0.4);
+  padding: 7px 10px;
+  border: 1px solid rgb(0, 255, 157);
+  color: rgb(0, 255, 157);
+  margin: 10px 0px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+.donate-btn1:hover {
+  transform: scale(0.9);
+  background-color: rgb(0, 255, 157);
+  color: white;
+} */

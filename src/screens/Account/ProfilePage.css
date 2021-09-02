@@ -1,0 +1,84 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+  color: var(--black);
+}
+
+.profile-page .header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  border-bottom: 3px;
+  font-weight: 500;
+  background: linear-gradient(
+    to bottom,
+    var(--black) 0%,
+    var(--black) 60%,
+    white 60%,
+    white 100%
+  );
+}
+
+.profile-page .header .head-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-page .header .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.profile-page .header .image .avatar {
+  height: 158px;
+  width: 158px;
+  border: solid white 4px;
+  filter: drop-shadow(0px 4px 20px rgba(101, 101, 101, 0.15));
+}
+
+.profile-page .header .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-top: 2px;
+}
+
+.account_paper {
+  padding: 10px;
+  margin: 30px 10px;
+}
+
+.account_wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.accout_wrapper_left {
+  padding: 20px;
+  width: 100%;
+  background-color: blueviolet;
+  height: 140px;
+}
+
+.accout_wrapper_left h2 {
+  color: white;
+}
+.accout_wrapper_right {
+  margin-top: 50px;
+}
+.edit-icon {
+  cursor: pointer;
+  color: var(--blue);
+  margin-left: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  padding: 3px;
+  vertical-align: middle;
+  background-color: var(--black);
+}
