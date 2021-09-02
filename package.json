@@ -60,5 +60,5 @@
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "https://fight-hunger.herokuapp.com"
 }
