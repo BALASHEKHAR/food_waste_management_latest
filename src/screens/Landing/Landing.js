@@ -356,10 +356,10 @@ const Landing = () => {
       </section>
       <section
         data-aos="fade-up"
-        className="text-gray-700 body-font border-t bg-blue-500 flex justify-items-center  align-middle "
+        className="text-gray-700 body-font border-t bg-white-500 flex justify-items-center  align-middle "
       >
         {/* <div className="container px-5 py-24  flex justify-items-center  align-middle"> */}
-        <div className=" bg-white -lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 ml-auto">
+        <div className=" bg-white -lg p-8 flex flex-col md:ml-auto w-full max-w-md mx-auto mt-10 md:mt-0 ml-auto">
           <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
             Feedback
           </h2>

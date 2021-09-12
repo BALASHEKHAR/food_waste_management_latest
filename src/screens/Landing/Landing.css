@@ -81,6 +81,9 @@ body {
 }
 
 @media screen and (max-width: 490px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
   .about_us_img {
     width: 300px;
   }
@@ -114,6 +117,10 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
   .helping_hands_main {
     top: 80px;
     margin: 10px;
@@ -125,6 +132,9 @@ body {
 }
 
 @media screen and (max-width: 358px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
   .helping_hands_main {
     height: 285px;
   }
