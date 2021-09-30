@@ -166,6 +166,7 @@ const Donate = ({ addPost, updatePost }) => {
       <form onSubmit={onSubmit}>
         <div className="inputs">
           <textarea
+            style={{ maxHeight: "400px" }}
             name="description"
             maxLength="480"
             rows="15"

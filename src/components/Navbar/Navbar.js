@@ -46,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
                 <div className="flex-shrink-0 flex items-center">
                   <Link to="/">
                     <h1 className="text-white font-bold text-xl">
-                      Fight waste
+                      Save Food
                     </h1>
                   </Link>
                 </div>
